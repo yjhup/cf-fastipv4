@@ -1,0 +1,12 @@
+name = "cf-fastipv4"
+main = "src/index.ts" # 改成你Worker的入口文件路径
+compatibility_date = "2026-02-05"
+
+# 生产环境变量（cron和fetch都能读到）
+[env.production.vars]
+KEY = "HPUAGQVJ3VTYN7D5AGWT"
+SECRET = "XfCNO8hsIXoyEfoTY1mQ2IanH1nt2b6t81sITYVx"
+
+# 绑定cron定时任务
+[[triggers]]
+crons = ["* * * * *"]
